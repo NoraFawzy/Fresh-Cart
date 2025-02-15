@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         <div className="mb-4">
           <a
-            href="/path/to/your/cv.pdf"
+            href="/src/assets/Nora_Fawzy_CV .pdf"
             download
             className="bg-white text-emerald-600 py-2 px-4 rounded hover:bg-gray-300"
           >
