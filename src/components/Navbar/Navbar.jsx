@@ -49,11 +49,16 @@ export default function Navbar() {
                 <li><Link to="/categories" className="hover:text-emerald-600">Categories</Link></li>
                 <li><Link to="/brands" className="hover:text-emerald-600">Brands</Link></li>
                 <li><Link to="/wishlist" className="hover:text-emerald-600">Wishlist</Link></li>
+                <li><Link to="/login" className="text-slate-600 hover:text-red-600" onClick={Signout}>Signout</Link></li>
+              </>
+            )}
+            {!UserLogin && (
+              <>
+                <li><Link to="/login" className="text-slate-600 hover:text-emerald-600">Login</Link></li>
+                <li><Link to="/register" className="text-slate-600 hover:text-emerald-600">Register</Link></li>
               </>
             )}
           </ul>
-
-        
         </div>
 
         <div className="hidden lg:flex items-center space-x-6">
@@ -89,7 +94,6 @@ export default function Navbar() {
             )}
           </ul>
         </div>
-        
       </div>
     </nav>
   );
